@@ -1,0 +1,199 @@
+body {
+    margin: 0;
+    padding: 0;
+    color: hsl(0, 0%, 98%);
+    
+}
+navComp {
+    z-index: 2;
+}
+#welcome_page {
+    width: 100%;
+    display: flex;
+    height: 800px;
+    overflow: hidden;
+}
+
+.welcome_text {
+    width: 30%;
+    position: relative;
+    top: 20%;
+}
+
+.welcome_text h2 {
+    font-size: 2em;
+    font-weight: 500;
+    margin: auto;
+    margin-left: 36%;
+    margin-top: 14%;
+    letter-spacing: 2px;
+    color: hsl(233, 26%, 24%);
+}
+
+.welcome_text p {
+    margin-left: 36%;
+    letter-spacing: 1px;
+    width: 90%;
+    line-height: 20px;
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    color: hsl(233, 8%, 62%);
+}
+
+button {
+    width: 130px;
+    height: 30px;
+    margin-left: 36%;
+    border-radius: 20px;
+    color: #fff;
+    border: none;
+    background-image: linear-gradient( to right, hsl(136, 63%, 66%),
+    hsl(236, 19%, 72%));
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.87;
+}
+.welcome_img {
+    width: 70%;
+    overflow: hidden;
+}
+
+.welcome_img svg {
+    width:720px;
+    height: 700px;
+    top: -10%;
+    left: 43%;
+    z-index: 0;
+    position: absolute;
+}
+
+#imageMockUp {
+    position: absolute;
+    width: 530px;
+    height: 800px;
+    top: -6%;
+    z-index: 0;
+    left: 58%;
+    right: 15%;
+    overflow-x: hidden;
+}
+.absolute {
+
+    position: absolute;
+}
+
+/**** About Section Styles ***/
+#about {
+    width: 100%;
+    height: 530px;
+    background-color: hsl(220, 16%, 96%);
+    position: relative;
+    top: -25%;
+    margin: 0;
+    padding: 0;
+    margin-top: -12.3%;
+    z-index: -1;
+}
+
+#about h2 {
+margin-left: 12%;
+position: relative;
+top : 16%;
+font-size: 2em;
+font-weight: 400;
+color: hsl(233, 26%, 24%);
+}
+
+#about > p {
+    margin-left: 12%;
+    position: relative;
+    top : 16%;
+    line-height: 25px; 
+    color: hsl(233, 8%, 62%);
+}
+
+.features {
+    display: flex;
+    width: 80%;
+    height: 100px;
+    margin-top: 120px;
+    margin-left: 11%;
+}
+.card {
+width: 25%;
+height: fit-content;
+margin: 15px;
+}
+.card h3{
+    color: hsl(233, 26%, 24%);
+}
+.card p {
+    line-height: 25px;
+    color: hsl(233, 8%, 62%);
+}
+
+svg {
+}
+
+/**article section styles **/
+#articles h2 {
+    margin-left: 12%;
+    margin-top: 2%;
+    color: hsl(233, 26%, 24%);
+    font-weight: 500;
+    font-size: 2em;
+}
+
+.article_cont {
+    display: flex;
+    justify-items: center;
+    gap: 5px;
+    width: 80%;
+    margin: auto;
+    margin-left: 12%;
+    align-items: center;
+}
+
+.row_items {
+    width: 25%;
+}
+
+.row_items img {
+    width: 94%;
+    height: 200px;
+}
+
+.row_items h4 {
+    font-weight: 400;
+    font-size: 1.25em;
+    color: hsl(233, 26%, 24%);
+}
+.row_items span {
+    position: relative;
+    top: 10px;
+    color: hsl(233, 26%, 24%);
+}
+.row_items p {
+    color: hsl(233, 26%, 24%);
+    line-height: 1.5em;
+}
+.row_items h4:hover {
+    color: hsl(136, 65%, 51%);
+    cursor: pointer;
+}
+/**animation **/
+@keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+#welcome_page {
+    animation: 1s slideInFromLeft;
+}

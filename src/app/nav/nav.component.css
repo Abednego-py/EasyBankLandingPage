@@ -1,0 +1,55 @@
+
+#nav_header {
+    margin: 0;
+    padding: 0;
+    color: grey;
+    height: 70px;
+    width: 100%;
+    display: flex;
+    background-color: #fff;
+    position:fixed;
+    box-shadow: 0px 0.5px rgb(225, 223, 223);
+}
+
+li {
+    display: inline;
+    margin: 10px;
+    text-decoration: none;
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+li:hover {
+    padding-bottom: 20px;
+    cursor: pointer;
+    border-bottom: 2px solid hsl(136, 63%, 66%);
+}
+
+.nav_items {
+    height: 100%;
+    margin-left: 10%;
+    margin-top: 25px;
+}
+
+svg {
+    margin: 25px 0px 0px 12%;
+    cursor: pointer;
+}
+
+button {
+    width: 130px;
+    height: 30px;
+    margin: 15px 0px 0px 10%;
+    border-radius: 20px;
+    color: #fff;
+    border: none;
+    background-image: linear-gradient( to right, hsl(136, 63%, 66%),
+    hsl(236, 19%, 72%));
+    cursor: pointer;
+}
+button:hover {
+opacity: 0.5;
+}
